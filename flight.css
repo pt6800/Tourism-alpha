@@ -1,0 +1,204 @@
+/* .container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+} */
+.header-image {
+    width: 100vw;
+    height: 356px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.header-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text h1 {
+    bottom: calc(2rem + 65px);
+    color: #fff;
+    font-size: 80px;
+    line-height: normal;
+    margin: 0;
+    max-width: 1200px;
+    position: absolute;
+    right: 3rem;
+    text-align: right;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.66);
+    text-transform: uppercase;
+    width: calc(100% - 6rem);
+    z-index: 1;
+}
+
+
+/* New styles for booking steps */
+.booking-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.booking-step {
+    flex: 1;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.arrow {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.last-step {
+    margin-right: 0;
+}
+
+h2 {
+    /* text-align: center; Center the text */
+    font-size:xx-large;
+    font-weight: bold; 
+    margin-bottom: -10px; /* Add some space below the heading */
+    margin-left: 20px;
+    color: navy;
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    margin-top: 50px;
+    border: 6px solid navy; /* Update border thickness */
+}
+
+.card-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px; /* Apply border radius to the image */
+    border-right: 4px solid navy; /* Add right border to the image */
+}
+
+.card-content {
+    background-color: #fff; /* Set background color to white */
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    flex-grow: 1; /* Allow the card content to grow to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #007bff;
+    width: 60px;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Second Card Section */
+.navy-card {
+    background-color: navy; /* Set background color to navy blue */
+}
+
+.navy-card .card-content {
+    background-color: transparent; /* Set background color of content to transparent */
+}
+
+.navy-card .card-content h3 {
+    color: white; /* Set text color to white */
+}
+
+.brown-button {
+    background-color: brown; /* Set button background color to brown */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px; /* Add margin between buttons */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.brown-button:hover {
+    background-color: darkred; /* Change button color on hover */
+}
+/* .container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+} */
+
+/* Add new container styles */
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with space between them */
+    margin-top: 50px;
+}
+
+.card {
+    width: calc(50% - 10px); /* Set card width to half of the container width with some gap */
+    border: 6px solid navy; /* Update border thickness */
+}
+
+/* Second Card Section */
+.navy-card {
+    background-color: navy; /* Set background color to navy blue */
+}
+
+.navy-card .card-content {
+    background-color: transparent; /* Set background color of content to transparent */
+}
+
+.navy-card .card-content h3 {
+    color: white; /* Set text color to white */
+}
+
+/* .container2{
+    display: flex;
+    justify-content: end;
+} */
+
+
+input[type="date"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

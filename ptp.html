@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip Planner Form</title>
+<link rel="stylesheet" href="ptp.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2 class="card-title">Trip Planner</h2>
+    <div class="card-body">
+      <form id="tripForm">
+        <div class="form-group">
+          <label for="destination">Where are you traveling?</label>
+          <input type="text" id="destination" name="destination" required>
+        </div>
+        <div class="form-group">
+          <label for="duration">Trip Duration (days)</label>
+          <select id="duration" name="duration">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="budget">Your Budget</label>
+          <select id="budget" name="budget">
+            <option value="standard">Standard</option>
+            <option value="medium">Medium</option>
+            <option value="luxury">Luxury</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="people">Number of People</label>
+          <input type="number" id="people" name="people" min="1" required>
+        </div>
+        <div class="form-group">
+          <label>Choose Themes</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="historical" name="themes" value="historical">
+            <label for="historical">Historical</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="adventure" name="themes" value="adventure">
+            <label for="adventure">Adventure</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="culture" name="themes" value="culture">
+            <label for="culture">Culture</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="food" name="themes" value="food">
+            <label for="food">Food</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="nature" name="themes" value="nature">
+            <label for="nature">Nature</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="shopping" name="themes" value="shopping">
+            <label for="shopping">Shopping</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="nightlife" name="themes" value="nightlife">
+            <label for="nightlife">Nightlife</label>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div id="tripPlan" class="card-body"></div> <!-- Output will be rendered here -->
+</div>
+
+<!-- <div class="card" id="tripPlanCard">
+    <div class="card-body" id="tripPlan"></div> 
+    <button class="book-now-button">Book Now</button>
+  </div> -->
+
+<script src="ptp.js"></script>
+</body>
+</html>
